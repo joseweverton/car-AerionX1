@@ -21,8 +21,8 @@
 
     <main>
       <article class="conteudo">
-        <div class="introducao">
-          <h1>Bicicletas Feitas a Mão</h1>
+        <div class="introducao" aria-labelledby="label-introducao">
+          <h1 id="label-introducao">Bicicletas Feitas a Mão</h1>
           <p>
             A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela
             vem equipada com os melhores acessórios da marca.
@@ -32,25 +32,25 @@
         <img src="./img/bicicleta.jpg" alt="Imagem bicicleta" />
       </article>
 
-      <article class="conteudo">
-        <h2 class="vantagens">Vantagens Bikcrafit</h2>
-        <div class="vantagens-itens">
-          <ul>
-            <li>
+      <article class="conteudo" aria-labelledby="label-vantagens">
+        <h2 class="subtitulo" id="label-vantagens">Vantagens Bikcrafit</h2>
+      
+          <ul class="vantagens">
+            <li class="vantagens-itens">
               <img src="./img/eletrica.svg" alt="" />
               <h3>Motor Elétrico</h3>
               <p>
                 Permite você viajar distâncias inimaginaveis com a sua bike.
               </p>
             </li>
-            <li>
+            <li class="vantagens-itens">
               <img src="./img/eletrica.svg" alt="" />
               <h3>Motor Elétrico</h3>
               <p>
                 Permite você viajar distâncias inimaginaveis com a sua bike.
               </p>
             </li>
-            <li>
+            <li class="vantagens-itens">
               <img src="./img/eletrica.svg" alt="" />
               <h3>Motor Elétrico</h3>
               <p>
@@ -58,7 +58,7 @@
               </p>
             </li>
           </ul>
-        </div>
+        
       </article>
     </main>
   </body>
