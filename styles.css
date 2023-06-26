@@ -79,6 +79,11 @@ body {
   right: -1.875rem;
 }
 
+.introducao-cover img {
+  object-fit: cover; /*serve para redimensionar img ou video dentro do container de modo que preencha todo o espaço*/
+  height: 100%;
+}
+
 .botao {
   padding: 1rem 2rem;
   background-color: #e21;
@@ -109,6 +114,7 @@ img {
   align-self: center;
   font-size: 4rem;
   background-image: url("./img/onda.svg");
+  /*word-break: break-all;/*quebra palavras quando não cabe no container*/
 }
 
 .vantagens {
@@ -132,4 +138,43 @@ img {
 
 .vantagens-itens p {
     grid-column: 2;
+}
+
+
+/*Responsividade - Break point*/
+
+@media (max-width: 950px) { /*abaixo de 950px*/
+
+  .conteudo-vantagens {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 1.875rem;
+  }
+  .menu {
+    margin-top: 1.875rem;
+  gap: 1.875rem;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao::before {
+    display: none; /*remove o traço decorativo*/
+  }
+
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .subtitulo {
+    font-size: 2rem;
+  }
 }
